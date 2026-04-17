@@ -1,4 +1,9 @@
 echo "Hi $USERNAME!\nThis is XPS14(Ubuntu 24.04.3 LTS)."
+echo 
+echo 
+echo "########## TODO ##########"
+echo 
+cat  ~/todo.txt
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -132,11 +137,14 @@ export LANG=ja_JP.UTF-8
 alias python="python3"
 alias ls="eza --icons=always --time-style '+<%Y-%m-%d %H:%M:%S>'"
 alias la="ls -a"
+alias lsa="la -a"
+alias lsla="la -la"
 alias xuu="sudo sync ; sudo shutdown -h now" # 今後addr予定
 alias tree="eza --icons=always -T -L"
 alias lsort="ls -l -r --total-size  -s size" # 今後addr予定
 alias dnsrestart="sudo systemctl restart systemd-resolved" # 今後addr予定
 alias android-studio-linux="sh /home/u3sound/Downloads/android-studio-2025.2.1.7-linux/android-studio/bin/studio.sh" # 今後addr予定
+alias win-restart='sudo grub-reboot "Windows Boot Manager (on /dev/nvme0n1p1)" ; sudo reboot'
 
 # JAVA 環境変数, PATH設定
 JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
@@ -192,3 +200,12 @@ PY
   fi
 }
 
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/home/u3sound/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
