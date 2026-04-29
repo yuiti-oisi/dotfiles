@@ -134,7 +134,10 @@ export LANG=ja_JP.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias python="python3"
+alias python3.13="python3.13"
+alias pip3.13="python3.13 -m pip"
+alias python3.14="python3.14"
+alias pip3.14="python3.14 -m pip"
 alias ls="eza --icons=always --time-style '+<%Y-%m-%d %H:%M:%S>'"
 alias la="ls -a"
 alias lsa="la -a"
